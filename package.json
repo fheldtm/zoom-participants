@@ -1,0 +1,40 @@
+{
+  "homepage": "https://fheldtm.github.io/zoom-participants",
+  "name": "participants",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest --environment jsdom --root src/",
+    "test:e2e": "playwright test",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "fxjs": "^0.21.3",
+    "pinia": "^2.0.28",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6",
+    "vue3-timepicker": "^1.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.28.1",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/test-utils": "^2.2.6",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "gh-pages": "^5.0.0",
+    "jsdom": "^20.0.3",
+    "postcss": "^8.4.21",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.6",
+    "vite": "^4.0.0",
+    "vitest": "^0.25.6"
+  }
+}
